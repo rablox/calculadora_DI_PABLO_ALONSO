@@ -100,7 +100,7 @@ public class MainController implements Initializable, EventHandler<ActionEvent> 
             instancias();
             root.setLeft(null);
             root.setRight(null);
-
+            historial.setDisable(true);
 
 
         }
