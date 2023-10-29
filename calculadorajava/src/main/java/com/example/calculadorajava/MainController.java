@@ -117,23 +117,21 @@ public class MainController implements Initializable, EventHandler<ActionEvent> 
             nueve.setOnAction(e -> imprimirNumero("9"));
             cero.setOnAction(e -> imprimirNumero("0"));
 
-
             botonsumar.setOnAction(e -> handleOperaciones("+"));
             botonrestar.setOnAction(e -> handleOperaciones("-"));
             botonmulti.setOnAction(e -> handleOperaciones("x"));
             botondiv.setOnAction(e -> handleOperaciones("/"));
             botonigual.setOnAction(e -> handleOperaciones("="));
-
-            sin.setOnAction(this::handleFuncion);
-            cos.setOnAction(this::handleFuncion);
-            tan.setOnAction(this::handleFuncion);
-            log.setOnAction(this::handleFuncion);
         }
 
         private void acciones(){
             botoncientifica.setOnAction( this);
             botonhistorial.setOnAction(this);
             borrar.setOnAction(this);
+            sin.setOnAction(this::handleFuncion);
+            cos.setOnAction(this::handleFuncion);
+            tan.setOnAction(this::handleFuncion);
+            log.setOnAction(this::handleFuncion);
         }
 
             @Override
