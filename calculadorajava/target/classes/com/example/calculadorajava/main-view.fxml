@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="root" maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculadorajava.MainController">
+   <top>
+      <HBox alignment="TOP_CENTER" prefHeight="43.0" prefWidth="560.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="botoncientifica" mnemonicParsing="false" text="Científica">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="botonhistorial" mnemonicParsing="false" text="Historial">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <GridPane prefHeight="135.0" prefWidth="396.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <Button fx:id="uno" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="1" GridPane.rowIndex="1" />
+            <Button fx:id="dos" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="tres" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="botonsumar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="cuatro" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="4" GridPane.rowIndex="2" />
+            <Button fx:id="cinco" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="seis" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="botonrestar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="siete" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="7" GridPane.rowIndex="3" />
+            <Button fx:id="ocho" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="nueve" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="botonmulti" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="x" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button fx:id="cero" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="botondiv" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="/" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <TextField fx:id="pantalla" prefHeight="32.0" prefWidth="354.0" GridPane.columnSpan="4">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextField>
+            <Button fx:id="botonigual" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="=" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button fx:id="borrar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="C" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </center>
+   <left>
+      <GridPane fx:id="cientifica" prefHeight="276.0" prefWidth="75.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="log" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="log" />
+            <Button fx:id="sin" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="sin" GridPane.rowIndex="1" />
+            <Button fx:id="cos" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="cos" GridPane.rowIndex="2" />
+            <Button fx:id="tan" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" text="tan" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </left>
+   <right>
+      <VBox prefHeight="355.0" prefWidth="131.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="21.0" prefWidth="665.0" text="Historial">
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Label>
+            <TextArea fx:id="historial" prefHeight="360.0" prefWidth="131.0" />
+         </children>
+      </VBox>
+   </right>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</BorderPane>
